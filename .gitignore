@@ -1,0 +1,19 @@
+# tous les fichiers, tous dossiers
+password.txt
+
+# tous les fichiers finissant par .log, tous dossiers
+*.log
+# sauf...
+!toto.log
+
+# Pas toto.log du dossier secret
+/secret/toto.log
+# Dans le dossier secret, y compris tous ses sous dossiers
+/secret/**/*.key
+
+# trucs importants...
+node_modules/ 
+build
+.env
+.sass-cache
+.DS_Store
